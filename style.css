@@ -1,0 +1,816 @@
+*{
+    margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box; font-family: 'Lato', sans-serif; line-height: 1.5em;
+}
+body{
+    background-color: black;
+}
+p{
+    color: white;
+    cursor: default;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+ul{
+    list-style: none;
+    cursor: default;
+} 
+h1{
+    cursor: default;
+}
+
+/* ====== GLOBAL USAGE ====== */
+.title{
+    font-size: 1.5em;
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    color: white;
+}
+.container{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+}
+
+/* ========== ARTIGOS ==========*/
+.article{
+    padding: 3% 1.5%;
+    background-color: #262626;
+    margin: 5% 4.5%;
+    border-radius: 12px 12px 0 0;
+    text-align: justify;
+}
+.article img{
+    width: 100%;
+    border-radius: 13px;
+}
+.article p{
+    padding: 2%;
+}
+.article iframe{
+    width: 100%;
+}
+.article ul{
+    text-align: center;
+    color: white;
+}
+/* ========== FIM DOS ARTIGOS ==========*/
+
+/* ====== FIM DO GLOBAL USAGE ====== */
+
+/* ========== HEADER ==========*/
+.menu{
+    display: none;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+}
+.btn-menu{
+    width: 56px;
+    height: 56px;
+    float: right;
+    background-color: black;
+    text-align: center;
+    color: #C12111;
+    margin: 1.5% 3% 1.5% 0;
+    border-radius: 56px;
+    cursor: pointer;
+}
+.btn-close{
+    font-size: 1.5em;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin: 2% 3% 0 0;
+}
+#header_logo{
+    width: 60px;
+    height: 60px;
+    margin: 1% 0 0 3%; 
+    float: left;
+    background: url(http://superserialgamers.com/wiki/images/1/16/Dota2_logo.png) center center/60px no-repeat;
+    font-size: 0;
+}
+#header{
+    width: 100%;
+    float: left;
+    text-align: center;
+    background: linear-gradient(to left, #C12111 , #3A0D08);
+    /*display: block !important;*/
+    position: static;
+}
+#header a{
+    color: rgba(255,255,255, 1);
+    font-size: 1.1em;
+}
+/* ========== FIM DO HEADER ==========*/
+
+/* ========= PAGINA INICIAL ============*/
+/* ========== BANNER E TITULO ==========*/
+.banner img{
+    width: 100%;
+}
+.banner p{
+    margin: 4% 2%;
+    padding: 4% 2%;
+    text-align: center;
+}
+.banner button{
+    width: 100%;
+    padding: 3% 7% 2.5% 7%;
+    margin-bottom: 3%;
+    border-radius: 3%;
+    text-align: left;
+    background-color: white;
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.banner i{
+    float: right;
+    cursor: pointer;
+    background-color: white;
+}
+/* ========== FIM BANNER E TITULO ==========*/
+/* ========= FIM DA PAGINA INICIAL ============*/
+
+/*======== PAGINA ABOUT =========*/
+.banner_about{
+     background: url(img/about/dota2backgroundRoshan.jpg) no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.about_title{
+    text-align: left;
+    color: #C12111;
+    padding: 2px 0 3px 15px;
+}
+.main_about{
+    line-height: 1.5em;
+}
+.main_about h1{
+    padding: 5% 5% 10% 5%;
+}
+.main_about p{
+    text-align: justify;
+    padding: 4%;
+}
+.main_about img{
+    border-radius: 20px;
+    width: 90%;
+    margin: 0 5%
+}
+.main_about iframe{
+    width: 100%;
+}
+/*======== FIM DA PAGINA ABOUT =========*/
+
+/*======== PAGINA DOWNLOAD =========*/
+.flex_container {
+    display:flex;
+    flex-direction:column;
+}
+.flex_box {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 3%;
+    background-color: #171A21;
+    border-radius: 20px;
+    padding: 7%;
+}
+.flex_box_steam{
+    height: 2em;
+}
+/*======== FIM DA PAGINA DOWNLOAD =========*/
+
+/*======== PAGINA INFO =========*/
+.info_carousel{
+    overflow: hidden;
+    margin: 0 5%;
+    height: 40%;
+}
+.info_carousel .info_img{
+    border-radius: 20px;
+    width: 90%;
+    height: 40%;
+    position: absolute;
+    opacity: 0;
+    -webkit-animation-name: css-animation-fade;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite; 
+}
+.info_carousel .info_img:nth-child(2){
+    -webkit-animation-delay:5s;
+}
+.info_carousel .info_img:nth-child(3){
+    -webkit-animation-delay:10s;
+}
+.info_carousel .info_img:nth-child(4){
+    -webkit-animation-delay:15s;
+}
+.info_carousel .info_img:nth-child(5){
+    -webkit-animation-delay:20s;
+}
+.info_carousel .info_img:nth-child(6){
+    -webkit-animation-delay:25s;
+}
+.info_carousel .info_img:nth-child(7){
+    -webkit-animation-delay:30s;
+}
+@-webkit-keyframes css-animation-fade{
+    from{
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    15%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.info_list{
+    color: white;
+    list-style: square;
+}
+.info_dicas img{
+    margin-top: 3%;
+    border-radius: 20px;
+    width: 100%;
+    height: 30%;
+}
+.info_title{
+    font-size: 2em;
+    padding: 5px;
+}
+.info_p{
+    font-size: 1.3em;
+    padding: 2% 4%;
+}
+/*======== FIM DA PAGINA INFO =========*/
+
+/*======== PAGINA FORMULÁRIO =========*/
+#form_body{
+    background-color: white;
+}
+.form{
+    background-color: #d9d9d9;
+    border: #C12111 solid 5px;
+    border-radius: 30px;
+    width: 94%;
+    margin: 0 3%;
+}
+.form p{
+    color: black;
+    font-weight: bold;
+}
+#form_title{
+    text-align: center;
+}
+#form_title h1{
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+    color: #C12111;
+    font-family: cursive;
+    font-style: italic;
+}
+#form_title p{
+    margin: 3% 0;
+}
+.form_info p{
+    margin: 6%;
+}
+.form_info input{
+    border: #C12111 solid 2px; 
+    border-radius: 10px;   
+}
+.form_info select{
+    font-weight: bold;
+    border-radius: 10px;
+    border: #C12111 solid 2px;
+    width: 150px;
+    height: 28px;
+}
+#form_info_color{
+    border: none;
+}
+.form_button{
+    width: 45%;
+    margin: 0 2.5% 4% 2.5%;
+    float: left;
+    background-color: white;
+}
+.form_button_din button{
+    background-color: black;
+    color: #C12111;
+    margin: 0 3%;
+    border: #C12111 solid 2px;
+    border-radius: 8px;
+    padding: 2%;
+    font-weight: bold;
+}
+#form_background{
+    color: #d9d9d9;
+}
+/*======== FIM DA PAGINA FORMULÁRIO =========*/
+
+/*============ FOOTER ===========*/
+
+#content-footer{
+    width: 100%;
+    padding: 1.5%;
+    text-align: center;
+}
+#edit_frame{
+    width: 100%;
+    height: 21.5%;
+}
+.social_icons a{
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 15%
+}
+.social_icons a:last-child{
+    margin-right: 0;
+}
+.social_icons a:hover{
+    color: rgb(255, 255, 255);
+}
+.footer{
+    margin-top: 2%;
+    font-size: 2em;
+    color: rgba(255, 255, 255, 1);
+}
+/*============ FIM DO FOOTER ===========*/
+
+/* ============== MOBILE FIRST ==============*/
+/* SMALL DEVICES - SMARTPHONES */
+@media screen and (min-width: 480px){
+    /* ========== HEADER ==========*/
+    #header_logo{
+        background: url(img/header/dota2logoheader3.png) center center/250px no-repeat;
+        float: left;
+        width: 250px;
+    }
+    .menu ul{
+        margin: 0;
+    }
+    .menu ul li{
+        font-size: 1.5em;
+    }  
+    /* ========== FIM DO HEADER ==========*/
+    
+    /* ========= PAGINA INICIAL ============*/
+    .title{
+        font-size: 2.5em;
+    }
+    .banner p{
+        font-size: 1.5em;
+    }
+    .banner button{
+        width: 60%;
+        padding: 3%;
+        margin: 0 20% 3% 20%;
+        border-radius: 10px;
+        text-align: left;
+        background-color: white;
+        color: black;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    .banner i{
+        padding-top: 6px; 
+    }
+    .article p{
+        font-size: 1.3em;
+    }
+    .article ul{
+        font-size: 1.3em;
+    }
+    /* ========= FIM DA PAGINA INICIAL ============*/
+    
+    /*======== PAGINA ABOUT =========*/
+    .main_about h1{
+        padding: 4%;
+    }
+    .main_about p{
+        padding: 2% 4%;
+    }
+    .main_about img{
+        margin: 2% 5%
+    }
+    .main_about iframe{
+        width: 90%;
+        margin: 0 5%;
+    }
+    /*======== FIM DA PAGINA ABOUT =========*/
+    
+    /* ========= PAGINA DOWNLOAD ============*/
+    .flex_box_steam{
+        height: 3em;
+    }
+    /* ========= FIM DA PAGINA DOWNLOAD ============*/
+    
+    /* ========= PAGINA INFO ============*/
+    .info_carousel{
+        margin: 0;
+        height: 45%;
+    }
+    .info_carousel .info_img{
+        max-width: 80%;
+        margin: 0 10%;
+        height: 45%;
+    }
+    /* ========= FIM DA PAGINA INFO ============*/
+    
+    /* ========= PAGINA FORMULÁRIO ============*/
+    .form{
+        width: 88%;
+        margin: 0 6%;
+    }
+    /* ========= FIM DA PAGINA FORMULÁRIO ============*/
+}
+
+/* SMALL DEVICES - TABLET */
+@media screen and (min-width: 760px){
+    /* ========= PAGINA INICIAL ============*/
+    .title{
+        font-size: 3.3em;
+    }
+    .banner img{
+        width: 70%;
+        margin: 0 15%;
+    }
+    .banner p{
+        font-size: 2em;
+    }
+    .article{
+        float: left;
+        width: 42%;
+        margin: 4%;
+    }
+    .article:nth-child(4){
+        margin-top: -320px;
+    }
+    /* ========= FIM DA PAGINA INICIAL ============*/
+    
+    /*======== PAGINA ABOUT =========*/
+    .main_about h1{
+        padding: 0 5%;
+    }
+    .main_about p{
+        padding: 1.5% 7%;
+    }
+    .main_about img{
+        border-radius: 35px;
+        width: 80%;
+        margin: 2% 10%
+    }
+    .main_about iframe{
+        width: 80%;
+        margin: 2% 10%;
+    }
+    /*======== FIM DA PAGINA ABOUT =========*/
+    
+    /* ========= PAGINA DOWNLOAD ============*/
+    .flex_box{
+        margin: 5% 25%;
+        width: 50%;
+        font-size: 1.8em;
+        border-radius: 40px;
+    }
+    .flex_box_steam{
+    width: 100%;    
+}
+    /* ========= FIM DA PAGINA DOWNLOAD ============*/
+    
+    /* ========= PAGINA INFO ============*/
+    .info_article{
+        float: left;
+        width: 44%;
+        height: 800px;
+        margin: 3%;
+    }
+    .info_article:nth-child(4){
+        margin-top: 3%;
+    }
+    .info_carousel{
+        margin: 0;
+        height: 45%;
+    }
+    .info_carousel .info_img{
+        width: 80%;
+        margin: 0 10%;
+        height: 45%;
+    }
+    .info_p{
+        text-align: justify;
+    }
+    /* ========= FIM DA PAGINA INFO ============*/
+    
+    /* ========= PAGINA FORMULÁRIO ============*/
+    .form{
+        width: 80%;
+        margin: 0 10%;
+    }
+    /* ========= FIM DA PAGINA FORMULÁRIO ============*/
+    
+    /*=========== FOOTER ==========*/
+    .footer{
+        font-size: 2.5em;
+    }
+    .social_icons a{
+        font-size: 2em;
+        margin-right: 25%;
+    }
+    .social_icons a:last-child{
+    margin-right: 0;
+}
+    /*=========== FIM DO FOOTER ==========*/
+}
+
+/* MEDIUM DEVICES - TABLETS & DESKTOP */
+@media screen and (min-width: 960px){
+    /* ========= HEADER ============*/
+    .btn-menu{
+        display: none;
+    }
+    .btn-close{
+        display: none;
+    }
+    #header_logo{
+        float: right;
+        height: 100px;
+        margin-right: 1.5%;
+    }
+    .menu{
+        display: block !important;
+        position: static;
+    }
+    .menu ul{
+        margin-top: -110px; 
+    }
+    .menu ul li{
+        float: left;
+        display: inline;
+        padding: 0 2%;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    /* ========= FIM DO HEADER ============*/
+    
+    /* ========= PAGINA INICIAL ============*/
+    .title{
+        font-size: 4em;
+        padding-bottom: 0;
+    }
+    .banner{
+        background: url(img/index/dota2background3.png) center center/100%;
+        width: 100%;
+        
+    }
+    .banner p{
+        margin-top: 0;
+    }
+    .banner button{
+        font-size: 3em;
+    }
+    .banner img{
+        display: none;
+    }
+    .article iframe{
+        width: 90%;
+    }
+    .article:nth-child(4){
+        margin-top: -370px;
+    }
+    /* ========= FIM DA PAGINA INICIAL ============*/
+    
+    /*======== PAGINA ABOUT =========*/
+    .banner_about{
+         background: url(img/about/dota2backgroundRoshan.jpg) no-repeat;
+         background-position: center;
+         background-size: cover;
+    }
+    .main_about p{
+        font-size: 1.2em;
+    }
+    /*======== FIM DA PAGINA ABOUT =========*/
+    
+     /* ========= PAGINA DOWNLOAD ============*/
+    .flex_container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .flex_box{
+        width: 40%;
+        margin: 5%;
+        padding: 3%;
+    }
+    /* ========= FIM DA PAGINA DOWNLOAD ============*/
+    
+    /* ========= PAGINA INFO ============*/
+    .info_article{
+        height: 710px;
+    }
+    .article iframe{
+        width: 90%;
+        margin: 0 5%;
+    }
+    .info_article:nth-child(4){
+        margin-top: 3%;
+    }
+    .info_carousel{
+        margin: 0;
+        height: 55%;
+    }
+    .info_carousel .info_img{
+        width: 70%;
+        margin: 0 15%;
+        height: 55%;
+    }
+    #info_background{
+        background: url(img/info/dota2backgroundInfo2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 420px;
+        margin-bottom: 40px;
+    }
+    /* ========= FIM DA PAGINA INFO ============*/
+    
+    /* ========= PAGINA FORMULÁRIO ============*/
+    .form{
+        width: 60%;
+        margin: 0 20%;
+    }
+    /* ========= FIM DA PAGINA FORMULÁRIO ============*/
+}
+
+/* LARGE DEVICES - DESKTOP */
+@media screen and (min-width: 1200px){
+    /* ========= HEADER ============*/
+    #header_logo{
+        height: 110px;
+        background: url(img/header/dota2logoheader3.png) center center/330px no-repeat;
+        width: 330px;
+    }
+    .menu ul{
+        margin-top: -140px; 
+    }
+    .menu ul li{
+        padding: 0 1.5%;
+        font-size: 2em;
+    }
+    /* ========= FIM DO HEADER ============*/
+    
+    /* ========= PAGINA INICIAL ============*/
+    .banner{
+        background: url(img/index/dota2background2.png) center center/100%;
+        padding-top: 100px;
+        width: 100%;
+    }
+    .banner img{
+        display: none;
+    }
+    .banner h1{
+        font-size: 4.5em;
+        float; right;
+    }
+    .banner p{
+        font-size: 2.2em;
+    }
+    .banner i{
+        font-size: 1.7em;
+        margin-top: -15px;
+    }
+    .banner button{
+        font-size: 3em;
+        width: 40%;
+        border-radius: 30px;
+        margin: 0 30% 5% 30%;
+    }
+    .article:nth-child(4){
+        margin-top: -400px;
+    }
+    .article img{
+        width: 86%;
+        margin: 0 7%;
+    }
+    /* ========= FIM DA PAGINA INICIAL ============*/
+    
+    /*======== PAGINA ABOUT =========*/
+    .banner h1{
+        font-size: 3.7em;
+        margin-bottom: 2%;
+    }
+    .banner_about{
+         background: url(img/about/dota2backgroundRoshan.jpg) no-repeat;
+         background-size: cover;
+    }
+    .main_about p{
+        font-size: 1.2em;
+    }
+    .main_about img{
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .main_about iframe{
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        height: 70%;
+    }
+    /*======== FIM DA PAGINA ABOUT =========*/
+    
+    /* ========= PAGINA DOWNLOAD ============*/
+    .flex_box{
+        width: 44%;
+        margin: 3%;
+        padding: 3%;
+    }
+    /* ========= FIM DA PAGINA DOWNLOAD ============*/
+    
+    /* ========= PAGINA INFO ============*/
+    .info_article{
+        height: 690px;
+        width: 42%;
+        margin: 4%;
+    }
+    .info_article:nth-child(4){
+        margin-top: 4%;
+    }
+    .info_article img{
+        margin-top: 3%;
+    }
+    .info_carousel{
+        height: 65%;
+    }
+    .info_carousel .info_img{
+        width: 66%;
+        margin: 0 17%;
+        height: 65%;
+    }
+    .info_p{
+        font-size: 2em;
+    }
+    /* ========= FIM DA PAGINA INFO ============*/
+    
+    /* ========= PAGINA FORMULÁRIO ============*/
+    .form{
+        width: 55%;
+        margin: 0 22.5%;
+    }
+    .flex_box_steam{
+        width: auto;
+    }
+    /* ========= FIM DA PAGINA FORMULÁRIO ============*/
+    
+    /* ========= FOOTER ============*/
+    .footer{
+        font-size: 3em;
+    }
+    /* ========= FIM DO FOOTER ============*/
+}
+
+/* LARGE DEVICES - DESKTOP */
+@media screen and (min-width: 1350px){
+    /* ========= PAGINA INICIAL ============*/
+    .banner{
+        background: url(img/index/dota2background4.png) center center/100%;
+    }
+    .article:nth-child(4){
+        margin-top: -430px;
+    }
+    /* ========= FIM DA PAGINA INICIAL ============*/
+    
+    /* ========= PAGINA ABOUT ============*/
+    .banner_about{
+         background: url(img/about/dota2backgroundRoshan.jpg) no-repeat;
+         background-size: cover;
+    }
+    /* ========= FIM DA PAGINA ABOUT ============*/
+    
+    /* ========= PAGINA INFO ============*/
+    .info_article{
+        margin: 5%;
+        width: 40%;
+    }
+    .info_article:nth-child(4){
+        margin-top: 5%;
+    }
+    /* ========= FIM DA PAGINA INFO ============*/
+}
